@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row form-group justify-content-center">
+    
+    <form action="#" method="post" class="align-self-center">
+        <input type="text" name="player" placeholder="enter text" />
+        <button type="submit" value="submit" class="btn btn-primary">submit</button>
+    </form>
+    
+</div>
+{% if ans=="positive" %}
+<div class="align-self-center">
+    <div class="jumbotron bg-warning">
+        <h1 class="display-3 text-center">positive</h1>
+        <p class="lead text-center">you are so nice!</p>
+    </div>
+</div>
+{% endif %}
+{% if ans=="negative" %}
+<div class="align-self-center">
+    <div class="jumbotron bg-warning">
+        <h1 class="display-3 text-center">negative</h1>
+        <p class="lead text-center">you suck!</p>
+    </div>
+</div>
+{% endif %}
+</div>
+
+
+{% endblock %}
